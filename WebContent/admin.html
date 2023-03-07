@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+.background{
+        background-image: url(images/admin.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+}
+.col-md-4{
+    height: 500px;
+    background-color: aqua; 
+}
+.black{
+    background-color: rgb(201, 241, 126);
+}
+label{
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    margin:35px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    border: none;
+    margin: 13px;
+    border-radius: 10px;
+}
+.image{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+input{
+    margin-left: 180px;
+}
+.head{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px;
+}
+.mahesh{
+    margin-top: 100px;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+</style>
+</head>
+<body>
+   <div class="container-fluid background">
+    <div class="container naresh">
+        <div class="heading">
+        <h1 class="head">Admin Panel</h1>
+    </div>
+        <div class="row mahesh">
+            <div class="col-md-4">
+                <form action="basic1.jsp">
+                    <label for="">NEWS & EVENTS</label><br>
+                    <textarea name="name" id="" cols="50" rows="10" placeholder="Please Type Here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-4 black">
+                <form action="basic2.jsp">
+                    <label for="">CAREERS</label>
+                    <textarea name="name" id="" cols="50" rows="10" placeholder="Please Type Here"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+      
+
+
+
+<form action="uploadImage1" method="post" enctype="multipart/form-data">
+
+update 1st picture <br>
+<input type="file" name="file" multiple="multiple"><br>
+<input type="submit">
+
+</form>
+<br>
+<br>
+
+
+<form action="uploadImage2" method="post" enctype="multipart/form-data">
+
+update 2nd picture <br>
+<input type="file" name="file" multiple="multiple"><br>
+<input type="submit">
+
+
+</form>
+<br>
+<br>
+
+
+
+<form action="uploadImage3" method="post" enctype="multipart/form-data">
+
+update 3rd picture <br>
+<input type="file" name="file" multiple="multiple"><br>
+<input type="submit">
+</form>
+
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
